@@ -1,0 +1,50 @@
+[
+  {
+    "id": "kb001",
+    "category": "billing",
+    "title": "Refund policy",
+    "content": "Customers can request a full refund within 14 days of purchase if the product has not been activated. After activation, refunds are prorated based on unused subscription time. Refund requests must be submitted through the billing dashboard or by contacting support with the order ID."
+  },
+  {
+    "id": "kb002",
+    "category": "billing",
+    "title": "Failed payment retry",
+    "content": "If a subscription payment fails, the system automatically retries the charge 3 times over 7 days. Customers receive an email notification after each failed attempt. If all retries fail, the account is downgraded to a free tier and access to premium features is paused until payment is resolved."
+  },
+  {
+    "id": "kb003",
+    "category": "technical",
+    "title": "Password reset not working",
+    "content": "If a password reset email is not received, first check spam/junk folders. Reset emails expire after 1 hour. If the issue persists, the account may be linked to an SSO provider (Google/Microsoft) rather than a direct password login, in which case the customer should sign in via that provider instead."
+  },
+  {
+    "id": "kb004",
+    "category": "technical",
+    "title": "API rate limit errors",
+    "content": "Free tier accounts are limited to 100 API requests per minute. Exceeding this returns a 429 error. Customers can upgrade to a Pro plan for 1000 requests per minute, or implement exponential backoff retry logic on their end."
+  },
+  {
+    "id": "kb005",
+    "category": "account",
+    "title": "Account deletion request",
+    "content": "Account deletion requests are processed within 30 days per data retention policy. Once submitted, the account is immediately deactivated but data is retained for the 30-day window in case the customer wants to cancel the deletion request."
+  },
+  {
+    "id": "kb006",
+    "category": "account",
+    "title": "Changing account email",
+    "content": "To change the email on an account, the customer must verify ownership of the current email first via a confirmation link, then verify the new email address. This two-step process prevents unauthorized account takeovers."
+  },
+  {
+    "id": "kb007",
+    "category": "technical",
+    "title": "Integration webhook failures",
+    "content": "Webhook delivery failures are retried with exponential backoff for up to 24 hours. Customers can view delivery logs and manually redeliver failed webhooks from the Integrations tab. Common causes include endpoint downtime or invalid SSL certificates."
+  },
+  {
+    "id": "kb008",
+    "category": "billing",
+    "title": "Enterprise plan invoicing",
+    "content": "Enterprise customers are billed via invoice on a net-30 basis rather than automatic card charges. Invoices are generated on the 1st of each month and sent to the billing contact on file. Late payments beyond 45 days may result in a temporary feature freeze."
+  }
+]
