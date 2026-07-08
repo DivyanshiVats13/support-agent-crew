@@ -9,9 +9,8 @@ KB_PATH = os.path.join(BASE_DIR, "data", "knowledge_base.json")
 CHROMA_PATH = os.path.join(BASE_DIR, "chroma_db")
 
 # Use a free, local embedding model — no API cost
-embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
-    model_name="all-MiniLM-L6-v2"
-)
+embedding_fn = embedding_functions.DefaultEmbeddingFunction()
+
 
 client = chromadb.PersistentClient(path=CHROMA_PATH)
 
